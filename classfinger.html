@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WWU Classfinger</title>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Nunito+Sans" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <script src="classfinger.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <img src="header_image.jpg" alt="WWU ClassFinger">
+      <div class="header_links">
+        <a href="http://www.wwu.edu">WWU Home</a>
+        <a href="https://fonts.googleapis.com/css?family=EB+Garamond|Nunito+Sans">Registration Info</a>
+        <a href="about.html">About Classfinger</a>
+      </div>
+    </div>
+
+    <form>
+      <div class="fingerform">
+        <div class="row">
+          <div class="section_top">
+            <div class="label">Term</div>
+              <input type="radio" name="term" value="Fall 2018">Fall 2018
+              <input type="radio" name="term" value="Winter 2019" checked>Winter 2019
+              <input type="radio" name="term" value="Spring 2019">Spring 2019
+              <input type="radio" name="term" value="Summer 2019">Summer 2019
+          </div>
+          <div class="section_top">
+            <div class="label">Subject</div>
+            <select name="subj" size="4" class="form_element">
+              <option value="All" selected>All Subjects</option>
+              <OPTION VALUE="A/HI">A/HI - Art History</option>
+              <OPTION VALUE="ACCT">ACCT - Accounting</option>
+              <OPTION VALUE="AECI">AECI - Arts Enterprise & Cultural Innovation</option>
+              <OPTION VALUE="AHE">AHE - Adult and Higher Education</option>
+              <OPTION VALUE="AMST">AMST - American Cultural Studies</option>
+              <OPTION VALUE="ANTH">ANTH - Anthropology</option>
+              <OPTION VALUE="ARAB">ARAB - Arabic</option>
+              <OPTION VALUE="ART">ART - Art</option>
+              <OPTION VALUE="ASTR">ASTR - Astronomy</option>
+              <OPTION VALUE="BIOL">BIOL - Biology</option>
+              <OPTION VALUE="BNS">BNS - Behavioral Neuroscience</option>
+              <OPTION VALUE="C/AM">C/AM - Canadian/American Studies</option>
+              <OPTION VALUE="C2C">C2C - Compass to Campus</option>
+              <OPTION VALUE="CD">CD - Coaching Development</option>
+              <OPTION VALUE="CHEM">CHEM - Chemistry</option>
+              <OPTION VALUE="CHIN">CHIN - Chinese</option>
+              <OPTION VALUE="CISS">CISS - Computer & Information Systems Security</option>
+              <OPTION VALUE="CLST">CLST - Classical Studies</option>
+              <OPTION VALUE="COMM">COMM - Communication Studies</option>
+              <OPTION VALUE="CSCI">CSCI - Computer Science</option>
+              <OPTION VALUE="CSD">CSD - Communication Sciences & Disorders</option>
+              <OPTION VALUE="DNC">DNC - Dance</option>
+              <OPTION VALUE="DSCI">DSCI - Decision Sciences</option>
+              <OPTION VALUE="DSGN">DSGN - Design</option>
+              <OPTION VALUE="EAST">EAST - East Asian Studies</option>
+              <OPTION VALUE="ECE">ECE - Early Childhood Education</option>
+              <OPTION VALUE="ECON">ECON - Economics</option>
+              <OPTION VALUE="EDAD">EDAD - Educational Administration</option>
+              <OPTION VALUE="EDUC">EDUC - Education</option>
+              <OPTION VALUE="EE">EE - Electrical Engineering</option>
+              <OPTION VALUE="EGEO">EGEO - Geography</option>
+              <OPTION VALUE="ELED">ELED - Elementary Education</option>
+              <OPTION VALUE="ELL">ELL - English Language Learners</option>
+              <OPTION VALUE="ENG">ENG - English</option>
+              <OPTION VALUE="ENGR">ENGR - Engineering</option>
+              <OPTION VALUE="ENRG">ENRG - Energy</option>
+              <OPTION VALUE="ENTR">ENTR - Entrepreneurship</option>
+              <OPTION VALUE="ENVS">ENVS - Environmental Studies</option>
+              <OPTION VALUE="ESCI">ESCI - Environmental Sciences</option>
+              <OPTION VALUE="ESJ">ESJ - Education and Social Justice</option>
+              <OPTION VALUE="EUS">EUS - Eurasian Studies</option>
+              <OPTION VALUE="FAIR">FAIR - Fairhaven</option>
+              <OPTION VALUE="FIN">FIN - Finance</option>
+              <OPTION VALUE="FREN">FREN - French</option>
+              <OPTION VALUE="GEOL">GEOL - Geology</option>
+              <OPTION VALUE="GERM">GERM - German</option>
+              <OPTION VALUE="GRAD">GRAD - Graduate Studies</option>
+              <OPTION VALUE="GREK">GREK - Greek</option>
+              <OPTION VALUE="HIST">HIST - History</option>
+              <OPTION VALUE="HLED">HLED - Health Education</option>
+              <OPTION VALUE="HNRS">HNRS - Honors</option>
+              <OPTION VALUE="HRM">HRM - Human Resource Management</option>
+              <OPTION VALUE="HSP">HSP - Human Services</option>
+              <OPTION VALUE="I T">I T - Instructional Technology</option>
+              <OPTION VALUE="IBUS">IBUS - International Business</option>
+              <OPTION VALUE="ID">ID - Industrial Design</option>
+              <OPTION VALUE="IEP">IEP - Intensive English Program</option>
+              <OPTION VALUE="INTL">INTL - International Studies</option>
+              <OPTION VALUE="ITAL">ITAL - Italian</option>
+              <OPTION VALUE="JAPN">JAPN - Japanese</option>
+              <OPTION VALUE="JOUR">JOUR - Journalism</option>
+              <OPTION VALUE="KIN">KIN - Kinesiology</option>
+              <OPTION VALUE="KORE">KORE - Korean</option>
+              <OPTION VALUE="LANG">LANG - Modern and Classical Language</option>
+              <OPTION VALUE="LAT">LAT - Latin</option>
+              <OPTION VALUE="LBRL">LBRL - Liberal Studies</option>
+              <OPTION VALUE="LDST">LDST - Leadership Studies</option>
+              <OPTION VALUE="LIBR">LIBR - Library</option>
+              <OPTION VALUE="LING">LING - Linguistics</option>
+              <OPTION VALUE="M/CS">M/CS - Mathematics/Computer Science</option>
+              <OPTION VALUE="MATH">MATH - Mathematics</option>
+              <OPTION VALUE="MBA">MBA - Master of Business Admin</option>
+              <OPTION VALUE="MDS">MDS - Multidisciplinary Studies</option>
+              <OPTION VALUE="MFGE">MFGE - Manufacturing Engineering</option>
+              <OPTION VALUE="MGMT">MGMT - Management</option>
+              <OPTION VALUE="MIS">MIS - Management Information Systems</option>
+              <OPTION VALUE="MKTG">MKTG - Marketing</option>
+              <OPTION VALUE="MPAC">MPAC - Master of Professional ACCT</option>
+              <OPTION VALUE="MSCI">MSCI - Materials Science</option>
+              <OPTION VALUE="MUS">MUS - Music</option>
+              <OPTION VALUE="NURS">NURS - Nursing</option>
+              <OPTION VALUE="OPS">OPS - Operations Management</option>
+              <OPTION VALUE="PCE">PCE - Plastics & Composite Engineering</option>
+              <OPTION VALUE="PE">PE - Physical Education</option>
+              <OPTION VALUE="PHIL">PHIL - Philosophy</option>
+              <OPTION VALUE="PHYS">PHYS - Physics</option>
+              <OPTION VALUE="PLSC">PLSC - Political Science</option>
+              <OPTION VALUE="PORT">PORT - Portuguese</option>
+              <OPTION VALUE="PSY">PSY - Psychology</option>
+              <OPTION VALUE="RC">RC - Rehabilitation Counseling</option>
+              <OPTION VALUE="RECR">RECR - Recreation</option>
+              <OPTION VALUE="RUSS">RUSS - Russian</option>
+              <OPTION VALUE="SALI">SALI - Salish Sea Studies</option>
+              <OPTION VALUE="SCED">SCED - Science Education</option>
+              <OPTION VALUE="SEC">SEC - Secondary Education</option>
+              <OPTION VALUE="SMNR">SMNR - Seminar</option>
+              <OPTION VALUE="SOC">SOC - Sociology</option>
+              <OPTION VALUE="SPAN">SPAN - Spanish</option>
+              <OPTION VALUE="SPED">SPED - Special Education</option>
+              <OPTION VALUE="TESL">TESL - Teaching English as a Second Language</option>
+              <OPTION VALUE="THTR">THTR - Theatre Arts</option>
+              <OPTION VALUE="VHCL">VHCL - Industrial Tech-Vehicle Design</option>
+              <OPTION VALUE="WGSS">WGSS - Women, Gender & Sexuality Studies</option>
+            </select>
+          </div>
+
+          <div class="section_top">
+            <div class="label">GUR/Course Attribute</div>
+            <select name="gur" size="4" class="form_element">
+              <option value="all_gur" selected>All Classes</option>
+              <OPTION VALUE="ACOM">ACOM - A-Communication</option>
+              <OPTION VALUE="ACGM">ACGM - A-Comparative Gender</option>
+              <OPTION VALUE="BCOM">BCOM - B-Communication</option>
+              <OPTION VALUE="BCGM">BCGM - B-Comparative Gender</option>
+              <OPTION VALUE="CCOM">CCOM - C-Communication</option>
+              <OPTION VALUE="CPST">CPST - Capstone Course</option>
+              <OPTION VALUE="CF">CF - Communication Focus</option>
+              <OPTION VALUE="CF-E">CF-E - Communication Focus-Economics</option>
+              <OPTION VALUE="FIG">FIG - First Year Interest Seminar</option>
+              <OPTION VALUE="TRVL">TRVL - Faculty Led Travel</option>
+              <OPTION VALUE="FYE">FYE - First Year Experience</option>
+              <OPTION VALUE="HUM">HUM - Humanities GUR</option>
+              <OPTION VALUE="LSCI">LSCI - Natural Science with Lab Component</option>
+              <OPTION VALUE="SCI">SCI - Natural Science</option>
+              <OPTION VALUE="OL">OL - Online</option>
+              <OPTION VALUE="QSR">QSR - Quantitative & Symbolic Reasoning</option>
+              <OPTION VALUE="SL">SL - Service Learning</option>
+              <OPTION VALUE="SSC">SSC - Social Sciences</option>
+              <OPTION VALUE="TLSC">TLSC - Transfer Lab Science</option>
+              <OPTION VALUE="MPAR">MPAR - Transfer Partial Math</option>
+              <OPTION VALUE="TSCI">TSCI - Transfer non-lab Science</option>
+              <OPTION VALUE="BREX">BREX - WWU Bremerton</option>
+              <OPTION VALUE="BNEX">BNEX - WWU Burien</option>
+              <OPTION VALUE="DLEX">DLEX - WWU Distance Learning</option>
+              <OPTION VALUE="EVEX">EVEX - WWU Everett</option>
+              <OPTION VALUE="MVEX">MVEX - WWU Mt Vernon</option>
+              <OPTION VALUE="NCEX">NCEX - WWU North Cascade Inst</option>
+              <OPTION VALUE="PAEX">PAEX - WWU Port Angeles</option>
+              <OPTION VALUE="PBEX">PBEX - WWU Poulsbo</option>
+              <OPTION VALUE="NSEX">NSEX - WWU Seattle</option>
+              <OPTION VALUE="TAEX">TAEX - WWU Tacoma</option>
+              <OPTION VALUE="WP1">WP1 - Writing Proficiency 1 point</option>
+              <OPTION VALUE="WP2">WP2 - Writing Proficiency 2 points</option>
+              <OPTION VALUE="WP3">WP3 - Writing Proficiency 3 points</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="section_mid">
+          <div>
+            <span class="label">Show Open Classes Only?</span>
+            <input type="checkbox" name="open" value="Yes">Yes
+          </div>
+          <button type="button" class="advanced_button" onclick="document.getElementById('slide').style.display='flex'">
+            Advanced Search...
+          </button>
+        </div>
+
+        <div class="advanced_search" id="slide">
+          <div class="section">
+            <div class="label">Days</div>
+            <div class="form_element_wrapper">
+              <input type="checkbox" value="Mon" class="check">M</input>
+              <input type="checkbox" value="Tue" class="check">T</input>
+              <input type="checkbox" value="Wed" class="check">W</input>
+              <input type="checkbox" value="Thu" class="check">R</input>
+              <input type="checkbox" value="Fri" class="check">F</input>
+            </div>
+          </div>
+
+          <div class="section_double">
+            <div class="double">
+              <div class="label">Start Time</div>
+              <select name="hour" class="form_element">
+                <option value="08">08:00</option>
+                <option value="09">09:00</option>
+                <option value="10">10:00</option>
+                <option value="11">11:00</option>
+                <option value="12">12:00</option>
+                <option value="13">13:00</option>
+                <option value="14">14:00</option>
+                <option value="15">15:00</option>
+                <option value="16">16:00</option>
+                <option value="17">17:00</option>
+                <option value="18">18:00</option>
+                <option value="19">19:00</option>
+                <option value="20">20:00</option>
+              </select>
+            </div>
+
+            <div class="double">
+              <div class="label">End Time</div>
+              <select name="hour" class="form_element">
+                <option value="09">09:00</option>
+                <option value="10">10:00</option>
+                <option value="11">11:00</option>
+                <option value="12">12:00</option>
+                <option value="13">13:00</option>
+                <option value="14">14:00</option>
+                <option value="15">15:00</option>
+                <option value="16">16:00</option>
+                <option value="17">17:00</option>
+                <option value="18">18:00</option>
+                <option value="19">19:00</option>
+                <option value="20">20:00</option>
+                <option value="21">21:00</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="label">Course Number (CRN)</div>
+            <input type="text" name="crn" placeholder="Separate with commas">
+          </div>
+
+          <div class="section">
+            <div class="label">Instructor</div>
+            <input type="text" name="instructor" placeholder="First, last, or full name">
+          </div>
+        </div>
+      </div>
+      <div class="button_wrapper">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </body>
+</html>
