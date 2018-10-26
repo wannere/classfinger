@@ -7,6 +7,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  padding-top: 2em;
 }
 
 .header_links {
@@ -38,7 +39,9 @@ a {
   border-radius: 5px;
   padding: 10px;
   margin: .5em;
-  width: 33%
+  width: 33%;
+  display: flex;
+  flex-direction: column;
 }
 
 .label {

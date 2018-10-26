@@ -1,0 +1,25 @@
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 2em;
+}
+
+.header_links {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #0083d6;
+}
+
+.main_section {
+  width: 80%;
+  margin: 3em 10% 1em 10%;
+}
