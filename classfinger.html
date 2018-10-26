@@ -3,6 +3,7 @@
   <head>
     <title>WWU ClassFinger</title>
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Nunito+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="index.css" rel="stylesheet">
     <script src="classfinger.js"></script>
   </head>
@@ -11,9 +12,14 @@
       <a href="classfinger.html" style="width:40%;"><img src="classfinger.png" alt="WWU ClassFinger" style="width:100%;"></a>
       <div class="header_links">
         <a href="http://www.wwu.edu">WWU Home</a>
-        <a href="http://www.wwu.edu/registrar/registration/index.shtml">Registration Info</a>
+        <a href="http://www.wwu.edu/registrar/registration/index.shtml">Academic Advising</a>
+        <a href="mailto:advising@wwu.edu">advising@wwu.edu</a>
         <a href="about.html">About ClassFinger</a>
       </div>
+    </div>
+
+    <div class="scratch_sheets">
+      <a class="sheet" contenteditable="true">Scratch Sheet 1</a>
     </div>
 
     <form>
@@ -201,9 +207,9 @@
             <span class="label">Show Open Classes Only?</span>
             <input type="checkbox" name="open" value="Yes">Yes
           </div>
-          <button type="button" class="advanced_button" onclick="document.getElementById('slide').style.display='flex'">
+          <div class="advanced_button">
             Advanced Search...
-          </button>
+          </div>
         </div>
 
         <div class="advanced_search" id="slide">
@@ -221,7 +227,8 @@
           <div class="section_double">
             <div class="double">
               <div class="label">Start Time</div>
-              <select name="hour" class="form_element">
+              <select name="hourstart" class="form_element">
+                <option value="00">Any</option>
                 <option value="08">08:00</option>
                 <option value="09">09:00</option>
                 <option value="10">10:00</option>
@@ -240,7 +247,8 @@
 
             <div class="double">
               <div class="label">End Time</div>
-              <select name="hour" class="form_element">
+              <select name="hourend" class="form_element">
+                <option value="00">Any</option>
                 <option value="09">09:00</option>
                 <option value="10">10:00</option>
                 <option value="11">11:00</option>
@@ -259,8 +267,8 @@
           </div>
 
           <div class="section">
-            <div class="label">Course Number (CRN)</div>
-            <input type="text" name="crn" placeholder="Separate with commas">
+            <div class="label">Course Number</div>
+            <input type="text" name="coursenum" placeholder="Separate with commas">
           </div>
 
           <div class="section">
@@ -270,6 +278,7 @@
         </div>
       </div>
       <div class="button_wrapper">
+        <input type="reset" value="Reset">
         <input type="submit" value="Submit">
       </div>
     </form>
