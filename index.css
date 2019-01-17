@@ -26,6 +26,13 @@ a {
   padding: 1.5em;
 }
 
+.resultsform {
+  margin: 2em 1em 1em;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: .5em;
+}
+
 .section {
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -47,6 +54,15 @@ a {
 .label {
   color: #003f87;
   font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.label_result {
+  color: #003f87;
+  font-size: 15px;
   font-weight: bold;
   margin-bottom: 5px;
   height: auto;
@@ -78,6 +94,14 @@ a {
   align-items: center;
 }
 
+.section_mid_results {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .advanced_search {
   display: none;
   justify-content: space-between;
@@ -92,7 +116,7 @@ a {
   }
 
   .section, .section_double {
-    width: 45%;
+    width: 44%;
   }
 
   .row {
@@ -109,6 +133,18 @@ a {
   border: 1px solid #003f87;
   color: #003f87;
   padding: 8px;
+  width: 154px;
+  font-size: 14px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  text-align: center;
+}
+
+.advanced_button_small {
+  border-radius: 5px;
+  border: 1px solid #003f87;
+  color: #003f87;
+  padding: 4px;
   width: 154px;
   font-size: 14px;
   background-color: #f2f2f2;
@@ -151,6 +187,58 @@ input[type=reset] {
   justify-content: flex-end;
 }
 
-.scratch_sheets {
-  margin-left: 10%;
+.button_wrapper_results {
+  margin: 0 1em 0 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1em;
+}
+
+.table_head {
+  display: flex;
+  flex-direction: row;
+  background-color: #d9d9d9;
+  border-radius: 5px 5px 0 0;
+}
+
+.head_item {
+  width: 18%;
+  text-align: center;
+  border-right: 1px solid #003f87;
+  font-size: 17px;
+  color: #003f87;
+  font-weight: bold;
+}
+
+.head_item:last-of-type {
+  border-right: none;
+}
+
+.head_item:first-of-type {
+  width: 10%
+}
+
+.result {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #003f87;
+  align-items: center;
+}
+
+.result:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.result:last-of-type {
+border-bottom: 1px solid #003f87;
+}
+
+.result_item {
+  width: 18%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.result_item:first-of-type {
+  width: 10%;
 }

@@ -17,13 +17,12 @@
         <a href="about.html">About ClassFinger</a>
       </div>
     </div>
-
     <form>
-      <div class="fingerform">
+      <div class="resultsform">
         <div class="row">
           <div class="section_top">
-            <div class="label">Term</div>
-            <select name="term" size="6" class="form_element">
+            <div class="label_result">Term</div>
+            <select name="term" size="1" class="form_element">
               <OPTION SELECTED VALUE="201840">Fall 2018
               <OPTION VALUE="201910">Winter 2019
               <OPTION VALUE="201920">Spring 2019
@@ -47,8 +46,8 @@
           </div>
 
           <div class="section_top">
-            <div class="label">Subject</div>
-            <select name="subj" size="6" class="form_element">
+            <div class="label_result">Subject</div>
+            <select name="subj" size="1" class="form_element">
               <option value="All" selected>All Subjects</option>
               <OPTION VALUE="A/HI">A/HI - Art History</option>
               <OPTION VALUE="ACCT">ACCT - Accounting</option>
@@ -157,8 +156,8 @@
           </div>
 
           <div class="section_top">
-            <div class="label">GUR/Course Attribute</div>
-            <select name="gur" size="6" class="form_element">
+            <div class="label_result">GUR/Course Attribute</div>
+            <select name="gur" size="1" class="form_element">
               <option value="all_gur" selected>All Classes</option>
               <OPTION VALUE="ACOM">ACOM - A-Communication</option>
               <OPTION VALUE="ACGM">ACGM - A-Comparative Gender</option>
@@ -198,19 +197,19 @@
           </div>
         </div>
 
-        <div class="section_mid">
+        <div class="section_mid_results">
           <div>
-            <span class="label">Show open classes only?</span>
+            <span class="label_result">Show open classes only?</span>
             <input type="checkbox" name="open" value="Yes">Yes
           </div>
-          <div class="advanced_button">
+          <div class="advanced_button_small">
             Advanced Search...
           </div>
         </div>
 
         <div class="advanced_search" id="slide">
           <div class="section">
-            <div class="label">Days</div>
+            <div class="label_result">Days</div>
             <div class="form_element_wrapper">
               <input type="checkbox" value="Mon" class="check">M</input>
               <input type="checkbox" value="Tue" class="check">T</input>
@@ -222,7 +221,7 @@
 
           <div class="section_double">
             <div class="double">
-              <div class="label">Start Time</div>
+              <div class="label_result">Start Time</div>
               <select name="hourstart" class="form_element">
                 <option value="00">Any</option>
                 <option value="08">08:00</option>
@@ -242,7 +241,7 @@
             </div>
 
             <div class="double">
-              <div class="label">End Time</div>
+              <div class="label_result">End Time</div>
               <select name="hourend" class="form_element">
                 <option value="00">Any</option>
                 <option value="09">09:00</option>
@@ -263,20 +262,109 @@
           </div>
 
           <div class="section">
-            <div class="label">Course Number</div>
+            <div class="label_result">Course Number</div>
             <input type="text" name="coursenum" placeholder="Separate with commas">
           </div>
 
           <div class="section">
-            <div class="label">Instructor</div>
+            <div class="label_result">Instructor</div>
             <input type="text" name="instructor" placeholder="First, last, or full name">
           </div>
         </div>
       </div>
-      <div class="button_wrapper">
-        <input type="reset" value="Reset">
-        <input type="submit" value="Submit">
+      <div class="button_wrapper_results">
+        <input type="submit" value="Apply changes">
       </div>
     </form>
+
+    <div class="table_head">
+      <p class="head_item">Credits</p>
+      <p class="head_item">Class/Instructor</p>
+      <p class="head_item">Time/Location</p>
+      <p class="head_item">GUR/Course Attribute</p>
+      <p class="head_item">Available seats</p>
+      <p class="head_item">Restrictions/Charges</p>
+    </div>
+    <div class="result">
+      <p class="result_item">3</p>
+      <p class="result_item">A/Hi 201: Zen & the Art of Tea <br/>Thomas, Shelley Falk</p>
+      <p class="result_item">TR 2:30–4:20 <br/>FI 230</p>
+      <p class="result_item">ACGM</p>
+      <p class="result_item">3/12</p>
+      <p class="result_item">$255/credit <br/>$50 flat fee</p>
+    </div>
+    <div class="result">
+      <p class="result_item">[number]</p>
+      <p class="result_item">[course #]: [course title] <br/>[instructor]</p>
+      <p class="result_item">[days/time] <br/>[classroom]</p>
+      <p class="result_item">[gur]</p>
+      <p class="result_item">[empty seats]/[total seats]</p>
+      <p class="result_item">[fee] <br/>[restriction] <br/>[major status]</p>
+    </div>
+    <div class="result">
+      <p class="result_item">[number]</p>
+      <p class="result_item">[course #]: [course title] <br/>[instructor]</p>
+      <p class="result_item">[days/time] <br/>[classroom]</p>
+      <p class="result_item">[gur]</p>
+      <p class="result_item">[empty seats]/[total seats]</p>
+      <p class="result_item">[fee] <br/>[restriction] <br/>[major status]</p>
+    </div>
+    <div class="result">
+      <p class="result_item">[number]</p>
+      <p class="result_item">[course #]: [course title] <br/>[instructor]</p>
+      <p class="result_item">[days/time] <br/>[classroom]</p>
+      <p class="result_item">[gur]</p>
+      <p class="result_item">[empty seats]/[total seats]</p>
+      <p class="result_item">[fee] <br/>[restriction] <br/>[major status]</p>
+    </div>
+    <div class="result">
+      <p class="result_item">[number]</p>
+      <p class="result_item">[course #]: [course title] <br/>[instructor]</p>
+      <p class="result_item">[days/time] <br/>[classroom]</p>
+      <p class="result_item">[gur]</p>
+      <p class="result_item">[empty seats]/[total seats]</p>
+      <p class="result_item">[fee] <br/>[restriction] <br/>[major status]</p>
+    </div>
+    <div class="result">
+      <p class="result_item">[number]</p>
+      <p class="result_item">[course #]: [course title] <br/>[instructor]</p>
+      <p class="result_item">[days/time] <br/>[classroom]</p>
+      <p class="result_item">[gur]</p>
+      <p class="result_item">[empty seats]/[total seats]</p>
+      <p class="result_item">[fee] <br/>[restriction] <br/>[major status]</p>
+    </div>
+    <div class="result">
+      <p class="result_item">[number]</p>
+      <p class="result_item">[course #]: [course title] <br/>[instructor]</p>
+      <p class="result_item">[days/time] <br/>[classroom]</p>
+      <p class="result_item">[gur]</p>
+      <p class="result_item">[empty seats]/[total seats]</p>
+      <p class="result_item">[fee] <br/>[restriction] <br/>[major status]</p>
+    </div>
+    <div class="result">
+      <p class="result_item">[number]</p>
+      <p class="result_item">[course #]: [course title] <br/>[instructor]</p>
+      <p class="result_item">[days/time] <br/>[classroom]</p>
+      <p class="result_item">[gur]</p>
+      <p class="result_item">[empty seats]/[total seats]</p>
+      <p class="result_item">[fee] <br/>[restriction] <br/>[major status]</p>
+    </div>
+    <div class="result">
+      <p class="result_item">[number]</p>
+      <p class="result_item">[course #]: [course title] <br/>[instructor]</p>
+      <p class="result_item">[days/time] <br/>[classroom]</p>
+      <p class="result_item">[gur]</p>
+      <p class="result_item">[empty seats]/[total seats]</p>
+      <p class="result_item">[fee] <br/>[restriction] <br/>[major status]</p>
+    </div>
+    <div class="result">
+      <p class="result_item">[number]</p>
+      <p class="result_item">[course #]: [course title] <br/>[instructor]</p>
+      <p class="result_item">[days/time] <br/>[classroom]</p>
+      <p class="result_item">[gur]</p>
+      <p class="result_item">[empty seats]/[total seats]</p>
+      <p class="result_item">[fee] <br/>[restriction] <br/>[major status]</p>
+    </div>
+
   </body>
 </html>
